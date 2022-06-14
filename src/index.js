@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import useAxios from "axios-hooks";
 import NewsList from "./NewsList";
 import CryptoList from "./CryptoList";
 

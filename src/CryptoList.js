@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import useAxios from "axios-hooks";
 import CryptoCard from "./CryptoCard";
 import "./index.css";
