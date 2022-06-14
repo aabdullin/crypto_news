@@ -1,122 +1,64 @@
-.section__crypto {
-    width: 100%;
+.background-image {
+  height: 30rem;
+  width: 139rem;
+  background-image: url(https://www.howtogeek.com/wp-content/uploads/2021/08/shutterstock_1434643079.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1);
+  mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%),
+    linear-gradient(to top left, transparent 49.5%, white 50.5%),
+    linear-gradient(white, white);
+  mask-size: 75% 25%, 25% 25%, 100% 75%;
+  mask-position: bottom left, bottom right, top left;
+  mask-repeat: no-repeat;
 }
 
-.section__crypto svg {
-    width: 100%;
-    padding: 2rem;
+.crypto-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.section__crypto polygon {
-  fill: #13131b;
-} 
-
-.section__crypto polyline {
-  stroke-width: 1.5;
-  fill: none;
+.crypto-card {
+  margin: 1rem;
+  padding: 1rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: #002d62;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  transition: all 0.5s;
 }
 
-.section__crypto h1 {
-    font-size: 3rem;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
+.news-card {
+  margin: 1rem;
+  height: 35rem;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #002d62;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  transition: all 0.5s;
+  align-self: center;
+  padding: 1rem;
 }
 
-.section__crypto--cards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.card-image {
+  display: block;
+  margin: 3rem;
+  height: 30%;
+  align-self: center;
 }
 
-.section__crypto--card {
-    margin: 1rem;
-    height: 35rem;
-    width: 28rem;
-    border-radius: 5px; 
-    background-color: #13131b;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    transition: all .5s;
+.section__news--article-list {
+  margin-top: 2rem;
+  list-style-type: none;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-.section__crypto--card:hover {
-    transform: scale(1.05);
+.news_list {
+  align-self: center;
 }
-
-.section__crypto--card-header {
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__crypto--card-image {
-    display: block;
-    margin: 3rem;
-    height: 50%;
-}
-
-.section__crypto--card h2 {
-    font-size: 1.6rem;
-    text-transform: uppercase !important;
-    padding: 3rem;
-    letter-spacing: .5rem;
-}
-
-.section__crypto--card-list {
-    margin-top: 2.5rem;
-    padding: 0 3rem;
-    list-style: none;
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-}
-
-@media only screen and (max-width: 75em) {
-    .section__crypto--card {
-        width: 25rem;
-        margin: 2.5rem 1rem;
-    }
-    
-     .section__crypto--card-image {
-        margin: 2rem;
-        height: 40%;
-    }
-    
-    .section__crypto--card h2 {
-        padding: 2rem;
-        letter-spacing: .4rem;
-    }
-}
-
- @media only screen and (max-width: 56.25em) {
-      .section__crypto--card {
-        width: 24rem;
-        margin: 3rem 2rem;
-    }
- }
-
-@media only screen and (max-width: 37.5em) {
-    .section__crypto--card-header {
-        height: 15%;
-    }
-    
-    .section__crypto--card {
-        width: 23rem;
-        margin: 1.5rem .8rem;
-    }
-    
-    .section__crypto--card-image {
-        margin: 1.5rem;
-        height: 40%;
-    }
-    
-    .section__crypto--card h2 {
-        padding: 1.5rem;
-        letter-spacing: .3rem;
-    }
-    
-  }
