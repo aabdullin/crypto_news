@@ -15,7 +15,7 @@ const NewsList = () => {
 
   return (
     <div className="news_list">
-      <a name="news" className="news_header">Latest News</a>
+      <h2 className="news_header">Latest News</h2>
       {data.results
         .filter((item) => {
           return true;
