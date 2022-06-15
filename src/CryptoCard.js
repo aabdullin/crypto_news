@@ -16,7 +16,7 @@ const CryptoCard = (props) => {
           {Math.round(value.price_change_percentage_24h * 100) / 100} %
         </div>
       </div>
-      Market cap: {value.market_cap}
+      Market cap: ${value.market_cap.toLocaleString()}
     </div>
   );
 };
