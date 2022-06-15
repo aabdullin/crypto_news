@@ -1,10 +1,7 @@
 # Crypto News
 
-![Design preview for the Todo app coding challenge](./design/crypto.png)
-
-# Domain
-
 crypto-latestnews.netlify.app
+![Design preview for the Todo app coding challenge](./design/crypto.png)
 
 ## Welcome! 👋
 
