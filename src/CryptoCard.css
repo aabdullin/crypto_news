@@ -1,13 +1,12 @@
 .background-image {
-  height: 30rem;
-  width: 104rem;
   background-image: url(https://www.howtogeek.com/wp-content/uploads/2021/08/shutterstock_1434643079.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1);
-  mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%),
-    linear-gradient(to top left, transparent 49.5%, white 50.5%),
-    linear-gradient(white, white);
-  mask-size: 75% 25%, 25% 25%, 100% 75%;
-  mask-position: bottom left, bottom right, top left;
-  mask-repeat: no-repeat;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .crypto-cards {
