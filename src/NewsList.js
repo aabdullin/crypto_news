@@ -38,7 +38,5 @@ const NewsList = () => {
   );
 };
 
-<a href="https://github.com/aabdullin/product_feedback">
-  Product Feedback App
-</a>;
+
 export default NewsList;

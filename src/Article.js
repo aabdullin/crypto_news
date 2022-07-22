@@ -3,9 +3,8 @@ import "./CryptoCard.css";
 
 const date = () => {
   const current = new Date();
-  const date = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
+  const date = `${current.getDate()}/${current.getMonth() +
+    1}/${current.getFullYear()}`;
   return date;
 };
 
@@ -15,10 +14,14 @@ const Article = (props) => {
   return (
     <div className="news-card">
       {key}
-      <h3>{value.title}</h3>
-      {value.preview}
-      <div className="date">{date()}</div>
-      {/* <a href={value.url}>More details</a> */}
+      <div>
+        <h3>{value.title}</h3>
+        {value.preview}
+        <h3>
+          <a href={value.url}>More details</a>
+        </h3>
+        <div className="date">{date()}</div>
+      </div>
     </div>
   );
 };
