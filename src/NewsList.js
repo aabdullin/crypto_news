@@ -1,5 +1,4 @@
 import React from "react";
-import useAxios from "axios-hooks";
 import Article from "./Article";
 import "./CryptoCard.css";
 import "./index.css";

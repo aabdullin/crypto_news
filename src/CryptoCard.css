@@ -30,6 +30,10 @@
   transition: all 0.5s;
 }
 
+.date {
+  margin-left: auto;
+}
+
 .news_header {
   font-size: 30px;
   padding: 20px;
